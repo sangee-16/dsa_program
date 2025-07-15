@@ -1,0 +1,29 @@
+3. Rotate a list to right k positions
+
+def rotate_right(arr, k):
+    n = len(arr)
+    k %= n
+    return arr[-k:] + arr[:-k]
+
+print(rotate_right([1, 2, 3, 4, 5], 2))
+
+output:
+
+[4, 5, 1, 2, 3]
+
+=== Code Execution Successful ===
+
+
+def rotate_left(arr, k):
+    n = len(arr)
+    k %= n
+    return arr[+k:] + arr[:+k]
+
+print(rotate_left([1, 2, 3, 4, 5], 2)) 
+
+
+output:
+
+[3, 4, 5, 1, 2]
+
+=== Code Execution Successful ===
